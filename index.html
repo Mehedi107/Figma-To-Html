@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top py-lg-5 py-md-4 py-3 shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/Logo.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="py-3 px-1" src="assets/icons/3bar.svg" alt="line icon" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Used Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Auctions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Car</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sell Car</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Local Dealers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sign-up" href="#"> <img class="me-3" src="assets/icons/Resting.svg" alt="" />Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container hero__content">
+        <h1 class="heading-primary">
+          Say hello to your next <br />
+          awesome vehicle <br />
+          <span class="heading-primary__sub">Featuring Used, Wholesale and Salvage Cars, Trucks <br />& SUVs for Sale</span>
+        </h1>
+      </div>
+      <div class="container hero__search row d-flex justify-content-between align-items-center px-sm-4 px-3">
+        <div class="col-md-2 col-12">
+          <h4 class="hero__search__title">Type</h4>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Used Car</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-12">
+          <h4 class="hero__search__title">Make</h4>
+          <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Infinity</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-12">
+          <select class="hero__search__form__select form-select form-select-sm" aria-label="Small select example">
+            <option selected>Year</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-12">
+          <select class="hero__search__form__select form-select form-select-sm" aria-label="Small select example">
+            <option selected>Model</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-12">
+          <select class="hero__search__form__select form-select form-select-sm" aria-label="Small select example">
+            <option selected>Price</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-md-2 col-12 d-flex justify-content-end">
+          <button type="button" class="btn-lg search__btn"><img class="search__btn__icon" src="assets/icons/search.svg" alt="search icon" />Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="car-brand">
+      <div class="container d-flex justify-content-between">
+        <img src="assets/img/brand_logo_1.png" alt="car brand logo" />
+        <img src="assets/img/brand_logo_2.png" alt="car brand logo" />
+        <img src="assets/img/brand_logo_3.png" alt="car brand logo" />
+        <img src="assets/img/brand_logo_4.png" alt="car brand logo" />
+        <img src="assets/img/brand_logo_5.png" alt="car brand logo" />
+        <img src="assets/img/brand_logo_6.png" alt="car brand logo" />
+      </div>
+    </section>
+
+    <section class="active-auction">
+      <div class="container">
+        <div class="auction__header d-flex justify-content-between align-items-center">
+          <h2 class="heading-secondary">Active auctions</h2>
+          <div class="navigate-card d-flex justify-content-between align-items-center gap-3">
+            <p class="navigate-card__number d-inline-block m-0 me-5"><span class="pagination-current">1</span> / <span class="pagination-total">6</span></p>
+            <button class="arrow__icon__btn swiper-button-prev swiper-navBtn">
+              <img class="arrow__icon" src="assets/icons/arrow-left.svg" alt="arrow icon" />
+            </button>
+            <button class="arrow__icon__btn swiper-button-next swiper-navBtn">
+              <img class="arrow__icon" src="assets/icons/arrow-right.svg" alt="arrow icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Auction Slider -->
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper" pagination="true" pagination-type="fraction">
+            <div class="card swiper-slide">
+              <img src="assets/img/card-1.jpg" class="card-img-top img-fluid" alt="car image" />
+              <div class="card-body">
+                <h5 class="card-title">2013 Subaru Forester</h5>
+                <div class="card-details d-flex align-items-center gap-3">
+                  <span>11 475 Miles</span>
+                  <span><img src="assets/icons/3dot.svg" alt="dot icon" /></span>
+                  <span>#20199884</span>
+                </div>
+                <div class="card__car-brand d-flex align-items-center">
+                  <span class="car-brand-logo"><img src="assets/img/small-logo-1.png" alt="car brand logo" /></span>
+                  <span>
+                    <h4 class="car-brand-title">Subaru Champlin</h4>
+                    <p class="car-brand-des">Seller</p>
+                  </span>
+                </div>
+                <div class="card-body__bottom d-flex align-items-center gap-3">
+                  <div class="card-body__bottom__price">
+                    <h4>$21,480</h4>
+                    <p>Price</p>
+                  </div>
+                  <img src="assets/icons/Line 4.svg" alt="" />
+                  <div class="card-body__bottom__price">
+                    <h4>
+                      <div class="card-body__bottom__price">
+                        <h4>$21,480</h4>
+                        <p>10 bids</p>
+                      </div>
+                    </h4>
+                  </div>
+                  <button class="card-body__bottom__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/img/card-2.jpg" class="card-img-top img-fluid" alt="car image" />
+              <div class="card-body">
+                <h5 class="card-title">2013 Subaru Forester</h5>
+                <div class="card-details d-flex align-items-center gap-3">
+                  <span>11 475 Miles</span>
+                  <span><img src="assets/icons/3dot.svg" alt="dot icon" /></span>
+                  <span>#20199884</span>
+                </div>
+                <div class="card__car-brand d-flex align-items-center">
+                  <span class="car-brand-logo"><img src="assets/img/small-logo-2.png" alt="car brand logo" /></span>
+                  <span>
+                    <h4 class="car-brand-title">Subaru Champlin</h4>
+                    <p class="car-brand-des">Seller</p>
+                  </span>
+                </div>
+                <div class="card-body__bottom d-flex align-items-center gap-3">
+                  <div class="card-body__bottom__price">
+                    <h4>$21,480</h4>
+                    <p>Price</p>
+                  </div>
+                  <img src="assets/icons/Line 4.svg" alt="" />
+                  <div class="card-body__bottom__price">
+                    <h4>
+                      <div class="card-body__bottom__price">
+                        <h4>$21,480</h4>
+                        <p>10 bids</p>
+                      </div>
+                    </h4>
+                  </div>
+                  <button class="card-body__bottom__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/img/card-3.jpg" class="card-img-top img-fluid" alt="car image" />
+              <div class="card-body">
+                <h5 class="card-title">2013 Subaru Forester</h5>
+                <div class="card-details d-flex align-items-center gap-3">
+                  <span>11 475 Miles</span>
+                  <span><img src="assets/icons/3dot.svg" alt="dot icon" /></span>
+                  <span>#20199884</span>
+                </div>
+                <div class="card__car-brand d-flex align-items-center">
+                  <span class="car-brand-logo"><img src="assets/img/small-logo-3.png" alt="car brand logo" /></span>
+                  <span>
+                    <h4 class="car-brand-title">Subaru Champlin</h4>
+                    <p class="car-brand-des">Seller</p>
+                  </span>
+                </div>
+                <div class="card-body__bottom d-flex align-items-center gap-3">
+                  <div class="card-body__bottom__price">
+                    <h4>$21,480</h4>
+                    <p>Price</p>
+                  </div>
+                  <img src="assets/icons/Line 4.svg" alt="" />
+                  <div class="card-body__bottom__price">
+                    <h4>
+                      <div class="card-body__bottom__price">
+                        <h4>$21,480</h4>
+                        <p>10 bids</p>
+                      </div>
+                    </h4>
+                  </div>
+                  <button class="card-body__bottom__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/img/card-1.jpg" class="card-img-top img-fluid" alt="car image" />
+              <div class="card-body">
+                <h5 class="card-title">2013 Subaru Forester</h5>
+                <div class="card-details d-flex align-items-center gap-3">
+                  <span>11 475 Miles</span>
+                  <span><img src="assets/icons/3dot.svg" alt="dot icon" /></span>
+                  <span>#20199884</span>
+                </div>
+                <div class="card__car-brand d-flex align-items-center">
+                  <span class="car-brand-logo"><img src="assets/img/small-logo-1.png" alt="car brand logo" /></span>
+                  <span>
+                    <h4 class="car-brand-title">Subaru Champlin</h4>
+                    <p class="car-brand-des">Seller</p>
+                  </span>
+                </div>
+                <div class="card-body__bottom d-flex align-items-center gap-3">
+                  <div class="card-body__bottom__price">
+                    <h4>$21,480</h4>
+                    <p>Price</p>
+                  </div>
+                  <img src="assets/icons/Line 4.svg" alt="" />
+                  <div class="card-body__bottom__price">
+                    <h4>
+                      <div class="card-body__bottom__price">
+                        <h4>$21,480</h4>
+                        <p>10 bids</p>
+                      </div>
+                    </h4>
+                  </div>
+                  <button class="card-body__bottom__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/img/card-2.jpg" class="card-img-top img-fluid" alt="car image" />
+              <div class="card-body">
+                <h5 class="card-title">2013 Subaru Forester</h5>
+                <div class="card-details d-flex align-items-center gap-3">
+                  <span>11 475 Miles</span>
+                  <span><img src="assets/icons/3dot.svg" alt="dot icon" /></span>
+                  <span>#20199884</span>
+                </div>
+                <div class="card__car-brand d-flex align-items-center">
+                  <span class="car-brand-logo"><img src="assets/img/small-logo-1.png" alt="car brand logo" /></span>
+                  <span>
+                    <h4 class="car-brand-title">Subaru Champlin</h4>
+                    <p class="car-brand-des">Seller</p>
+                  </span>
+                </div>
+                <div class="card-body__bottom d-flex align-items-center gap-3">
+                  <div class="card-body__bottom__price">
+                    <h4>$21,480</h4>
+                    <p>Price</p>
+                  </div>
+                  <img src="assets/icons/Line 4.svg" alt="" />
+                  <div class="card-body__bottom__price">
+                    <h4>
+                      <div class="card-body__bottom__price">
+                        <h4>$21,480</h4>
+                        <p>10 bids</p>
+                      </div>
+                    </h4>
+                  </div>
+                  <button class="card-body__bottom__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <img src="assets/img/card-3.jpg" class="card-img-top img-fluid" alt="car image" />
+              <div class="card-body">
+                <h5 class="card-title">2013 Subaru Forester</h5>
+                <div class="card-details d-flex align-items-center gap-3">
+                  <span>11 475 Miles</span>
+                  <span><img src="assets/icons/3dot.svg" alt="dot icon" /></span>
+                  <span>#20199884</span>
+                </div>
+                <div class="card__car-brand d-flex align-items-center">
+                  <span class="car-brand-logo"><img src="assets/img/small-logo-1.png" alt="car brand logo" /></span>
+                  <span>
+                    <h4 class="car-brand-title">Subaru Champlin</h4>
+                    <p class="car-brand-des">Seller</p>
+                  </span>
+                </div>
+                <div class="card-body__bottom d-flex align-items-center gap-3">
+                  <div class="card-body__bottom__price">
+                    <h4>$21,480</h4>
+                    <p>Price</p>
+                  </div>
+                  <img src="assets/icons/Line 4.svg" alt="" />
+                  <div class="card-body__bottom__price">
+                    <h4>
+                      <div class="card-body__bottom__price">
+                        <h4>$21,480</h4>
+                        <p>10 bids</p>
+                      </div>
+                    </h4>
+                  </div>
+                  <button class="card-body__bottom__btn">Place Bid</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="online-auction">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 online-auction__feature">
+            <h2 class="heading-secondary">
+              Online Auto Auctions
+              <span class="heading-secondary-sub">Vehicles available for sale</span>
+            </h2>
+            <div class="online-auction__quantity">
+              <span>2</span>
+              <span>0</span>
+              <span>8</span>
+              <span>9</span>
+              <span>9</span>
+            </div>
+            <p class="online-auction__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa libero veniam nam inventore quod, ipsum est error magnam itaque eligendi sed officiis doloribus aspernatur voluptatem quo soluta voluptatum ex!</p>
+            <button class="online-auction__btn"><img src="assets/icons/hammer.svg" alt="" />Explore All Auctions</button>
+          </div>
+          <div class="col-md-6 col-12 d-none d-md-block">
+            <img class="img-fluid" src="assets/img/Mockup.png" alt="mockup" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="find-car">
+      <div class="container">
+        <div class="find-car__header d-md-flex align-items-center justify-content-between">
+          <h2 class="heading-secondary">Find car by</h2>
+          <ul class="d-flex align-items-center find-car__header__list">
+            <li class="nav-item"><a class="nav-link active" href="#">Body types</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Makes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Model</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Trending</a></li>
+          </ul>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 col-md-4">
+            <div class="popular-makes">
+              <h6 class="popular-makes__title makes__title">Popular Makes</h6>
+              <div class="popular-makes__list">
+                <div class="popular-makes__item d-flex align-items-center gap-5">
+                  <img src="assets/img/find-1.png" alt="car logo" />
+                  <span class="popular-makes__item__body">
+                    <h4>Subaru</h4>
+                    <p>2,345</p>
+                  </span>
+                </div>
+                <div class="popular-makes__item d-flex align-items-center gap-5">
+                  <img src="assets/img/find-2.png" alt="car logo" />
+                  <span class="popular-makes__item__body">
+                    <h4>Mercedes-Benz</h4>
+                    <p>12,890</p>
+                  </span>
+                </div>
+                <div class="popular-makes__item d-flex align-items-center gap-5">
+                  <img src="assets/img/find-3.png" alt="car logo" />
+                  <span class="popular-makes__item__body">
+                    <h4>Hyundai</h4>
+                    <p>8,490</p>
+                  </span>
+                </div>
+                <div class="popular-makes__item d-flex align-items-center gap-5">
+                  <img src="assets/img/find-4.png" alt="car logo" />
+                  <span class="popular-makes__item__body">
+                    <h4>Volkswagen</h4>
+                    <p>19,300</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 mt-md-0 mt-5 pt-md-0 pt-5">
+            <div class="other-makes">
+              <h6 class="other-makes__title makes__title">Other Makes</h6>
+              <div class="row justify-content-between">
+                <div class="col-5">
+                  <table class="table table-borderless other-makes__table">
+                    <tbody>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-5">
+                  <table class="table table-borderless other-makes__table">
+                    <tbody>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                      <tr>
+                        <th>Acura</th>
+                        <td>1,752</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top d-none d-md-block">
+        <div class="container">
+          <div class="row footer__container">
+            <div class="col-3">
+              <h4 class="footer__title">About</h4>
+              <ul class="footer__list">
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#">How it works </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Careers </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> About us </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Media</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h4 class="footer__title">Community</h4>
+              <ul class="footer__list">
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#">Against Discrimination </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Invite friends </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Gift cards </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h4 class="footer__title">Become seller</h4>
+              <ul class="footer__list">
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#">Add your vehicle </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Business account </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Resource Center </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Community</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h4 class="footer__title">Bookings support</h4>
+              <ul class="footer__list">
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#">Updates for COVID-19 </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Help Center </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Support </a>
+                </li>
+                <li class="footer__list__item">
+                  <a class="footer__link" href="#"> Trust & Safety</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer__bottom d-flex flex-md-row flex-column justify-content-between align-items-center">
+        <div class="order-2 order-md-1 footer__bottom__text d-flex flex-md-row flex-column align-items-center gap-4">
+          <p class="m-0">
+            <a class="footer__bottom__link" href="#">Privacy Policy</a>
+          </p>
+          <p class="m-0">
+            <a class="footer__bottom__link" href="#">Term of Use</a>
+          </p>
+          <p class="footer__bottom__copyright m-0">© 2021 All rights reserved</p>
+        </div>
+        <div class="order-1 order-md-2 footer__bottom__icon d-flex align-items-center gap-5">
+          <span class="d-flex align-items-center gap-3">
+            <img src="assets/icons/globe.svg" alt="globe icon" />
+            <p class="footer__bottom__icon__text m-0">English</p>
+          </span>
+          <span class="d-flex align-items-center gap-3">
+            <img src="assets/icons/3dot.svg" alt="3 dot icon" />
+            <p class="footer__bottom__icon__text m-0">USD</p>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

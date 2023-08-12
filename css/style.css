@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+/* *********************** */
+/* **** Navigation **** */
+.navbar {
+  background-color: #fff;
+}
+
+.nav-link {
+  color: #0d0a19;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  letter-spacing: -0.01rem;
+  /* margin-right: 4.2rem; */
+}
+
+.sign-up {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-right: 0;
+}
+
+/* *********************** */
+/* **** Section Hero **** */
+.hero {
+  background: url(../assets/img/Rectangle.jpg) no-repeat center top / cover;
+  background-size: cover;
+  width: 100%;
+  height: 57.6rem;
+  position: relative;
+}
+
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-align: center;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 7.4rem;
+  letter-spacing: -0.0305rem;
+}
+
+.heading-primary__sub {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  margin-top: 2.6rem;
+}
+
+.hero__search {
+  position: absolute;
+  bottom: -4.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8.2rem;
+  border-radius: 0.8rem;
+  background: #fff;
+  box-shadow: 0px 3px 4px 0px rgba(153, 155, 168, 0.15);
+}
+
+.hero__search div:not(:last-child) {
+  border-right: 1px solid #9a9ea7;
+}
+
+.hero__search__title {
+  color: #9a9ea7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: -0.01rem;
+}
+
+.form-select {
+  color: #0d0a19;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  letter-spacing: -0.01rem;
+  border: none;
+}
+
+.hero__search__form__select {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  letter-spacing: -0.01rem;
+}
+
+.search__btn {
+  border-radius: 1rem;
+  background: #7963f0;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  letter-spacing: -0.01rem;
+  padding: 1.2rem 2.4rem;
+  border: none;
+}
+
+.search__btn__icon {
+  margin-right: 0.6rem;
+}
+
+/* *********************** */
+/* **** Section Car Brand **** */
+
+.car-brand {
+  margin: 12rem 0;
+  gap: 7rem;
+}
+
+/* *********************** */
+/* **** Section Active Auction **** */
+.auction__header {
+  margin-bottom: 4.6rem;
+  position: relative;
+}
+
+.active-auction {
+  margin-bottom: 12rem;
+}
+
+.heading-secondary {
+  color: #0d0a19;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+
+.navigate-card__number {
+  color: #9a9ea7;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.arrow__icon__btn {
+  width: 4.6rem;
+  height: 4.6rem;
+  background-color: #f5f6f7;
+  border-radius: 1rem;
+}
+
+.arrow__icon__btn:hover {
+  background-color: #f5f6f7;
+}
+
+.arrow__icon {
+  color: #9a9ea7;
+  font-weight: 400;
+}
+
+/* Slider */
+.slide-container {
+  max-width: 1213px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 2.4rem;
+  min-width: 36rem;
+  border-radius: 1.4rem;
+  border: 1px solid #e4e6e8;
+  background: #fff;
+}
+
+.card-img-top {
+  border-radius: 0.8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+  color: #0d0a19;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+
+.card-details span {
+  color: #9a9ea7;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: -0.01rem;
+}
+
+.card__car-brand {
+  margin-top: 2.2rem;
+  gap: 1.2rem;
+}
+
+.car-brand-logo {
+  display: inline-block;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid #e4e6e8;
+}
+
+.car-brand-title {
+  color: #0d0a19;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  letter-spacing: -0.01rem;
+  margin: 0;
+}
+
+.car-brand-des {
+  margin: 0;
+  color: #9a9ea7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.card-body__bottom {
+  margin-top: 2.4rem;
+}
+
+.card-body__bottom__price h4 {
+  color: #0d0a19;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.card-body__bottom__price p {
+  color: #9a9ea7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.card-body__bottom__btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  padding: 1.2rem 2.6rem;
+  border-radius: 1rem;
+  background: #7963f0;
+  border: none;
+  margin-left: auto;
+}
+
+/* *********************** */
+/* **** Section Online Auto Auction **** */
+.heading-secondary-sub {
+  display: block;
+  color: #0d0a19;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.online-auction__quantity {
+  margin: 2.2rem 0;
+}
+
+.online-auction__quantity span {
+  color: #0d0a19;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  padding: 1.8rem;
+  display: inline-block;
+  border-radius: 1rem;
+  border: 1px solid #e4e6e8;
+  background: #fff;
+  margin-right: 0.6rem;
+}
+
+.online-auction__paragraph {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  margin-bottom: 3.25rem;
+}
+
+.online-auction__btn {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: #f5f6f7;
+}
+
+/* ********************************* */
+/* Section Find Car */
+.find-car__header__list {
+  list-style-type: none;
+}
+
+.find-car__header__list a {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+}
+
+.find-car__header__list a:hover {
+  color: #0d0a19;
+}
+
+.find-car__header__list a.active {
+  border: 1px solid #eee;
+  color: #0d0a19;
+}
+
+/* **************************** */
+/* Section Popular Makes */
+.find-car {
+  margin-top: 10.5rem;
+}
+
+.popular-makes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.makes__title {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  margin-bottom: 3.8rem;
+}
+
+.popular-makes__item__body h4 {
+  color: #0d0a19;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  margin: 0;
+}
+
+.popular-makes__item__body p {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  margin: 0;
+}
+
+.other-makes__table th {
+  color: #0d0a19;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+
+.other-makes__table td {
+  color: #0d0a19;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+
+/* *********************** */
+/* ***** Footer ***** */
+.footer__top {
+  background: #f5f6f7;
+}
+
+.footer__top .container {
+  padding: 4rem;
+}
+
+.footer__list {
+  padding: 0;
+}
+
+.footer__title {
+  color: #0d0a19;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.footer__link {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 3.3rem;
+}
+
+.footer__bottom {
+  padding: 0 4rem;
+}
+
+.footer__bottom__link {
+  color: #0d0a19;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+
+.footer__bottom__copyright {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.footer__bottom__icon span {
+  padding: 1.2rem;
+}
+
+.footer__bottom__icon__text {
+  color: #9a9ea7;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}

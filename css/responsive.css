@@ -1,0 +1,121 @@
+/* 992 px = 62em */
+@media screen and (max-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .heading-primary {
+    font-size: 5.4rem;
+  }
+
+  .search__btn {
+    padding: 1rem 2rem;
+  }
+
+  .car-brand img {
+    height: 2.5rem;
+  }
+}
+
+/* 768 px = 48em */
+@media screen and (max-width: 47em) {
+  .hero__content {
+    top: 30%;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+  }
+
+  .heading-primary__sub {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .hero__search {
+    height: auto;
+    top: 80%;
+    margin: 0;
+  }
+
+  .hero__search div {
+    padding: 2rem 0;
+    border: none !important;
+  }
+
+  .hero__search div:not(:last-child) {
+    border-bottom: 1px solid #9a9ea7 !important;
+  }
+
+  .search__btn {
+    width: 100%;
+  }
+
+  .car-brand {
+    margin-top: 32rem;
+  }
+
+  .car-brand img {
+    height: 1.5rem;
+  }
+
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .online-auction {
+    background: rgba(120, 99, 240, 0.1);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer__bottom {
+    background: #f5f6f7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer__bottom__icon {
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+}
+
+/* 576 px = 36em */
+@media screen and (max-width: 36em) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-primary {
+    font-size: 3.4rem;
+    line-height: 1.2;
+  }
+
+  .heading-primary__sub {
+    font-size: 1.2rem;
+  }
+
+  .hero__search {
+    width: 90%;
+    top: 60%;
+  }
+
+  .car-brand img {
+    height: 1.3rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+}
