@@ -30,6 +30,7 @@ let swiper = new Swiper('.slide-content', {
   },
 });
 
+const copyrightYear = document.querySelector('.copyright__year');
 const cardsAll = document.querySelectorAll('.swiper-slide');
 const paginationCurrent = document.querySelector('.pagination-current');
 const paginationTotal = document.querySelector('.pagination-total');
@@ -37,3 +38,7 @@ const paginationTotal = document.querySelector('.pagination-total');
 let currentSlide = 0;
 
 paginationTotal.textContent = cardsAll.length;
+
+// Copyright year
+const date = new Date();
+copyrightYear.textContent = date.getFullYear();
